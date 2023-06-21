@@ -1,0 +1,20 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --primary: #0f8b8d;
+  --secondary: #ec9a29;
+  --border: #cccccc;
+  --btn: #a8201a;
+  --bg: #143642;
+  --text: #f9fbfe;
+}
+
+* {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}

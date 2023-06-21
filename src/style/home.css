@@ -1,0 +1,134 @@
+.home-wrapper {
+  width: 100vw;
+}
+.header-wrapper {
+  height: 100vh;
+  background-image: url('../icon/Coffe Header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+.header,
+main,
+.gallery,
+.home-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header {
+  color: var(--text);
+  background-color: rgba(20, 54, 66, 0.7);
+  height: 100vh;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+.header h1 {
+  font-size: 5rem;
+}
+.header p {
+  font-size: 2.5rem;
+}
+
+main {
+  gap: 1rem;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 55rem;
+  margin: 4rem 0;
+}
+.main-item {
+  display: flex;
+  gap: 6rem;
+}
+.main-item:nth-child(2) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.main-item .img {
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+.img1 {
+  width: 50rem;
+  height: 24rem;
+  background-image: url('../icon/Who are we.jpg');
+}
+.img2 {
+  width: 29rem;
+  height: 19rem;
+  background-image: url('../icon/Our products.jpg');
+}
+.img3 {
+  width: 60rem;
+  height: 25rem;
+  background-image: url('../icon/Hang out with us.jpg');
+}
+.img1:hover,
+.img2:hover,
+.img3:hover {
+  transform: scale(1.1);
+}
+.main-data h2,
+.gallery h2,
+.home-contact h2 {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+.main-data h2 {
+  display: inline-block;
+  border-bottom: 5px solid var(--secondary);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.main-data p,
+.home-contact p {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+.main-data a,
+.home-contact a {
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  background-color: var(--btn);
+  color: var(--text);
+  border-radius: 5rem;
+}
+.home-wrapper button a:hover {
+  background-color: rgb(255, 89, 89);
+}
+
+.gallery h2 {
+  margin: 2rem 0;
+}
+.gallery h2 span {
+  color: var(--secondary);
+  border-bottom: 2px solid var(--secondary);
+}
+.gallery-list {
+  display: grid;
+  grid-template-columns: repeat(3, 15rem);
+  gap: 2.5rem 5rem;
+}
+.gallery-list img {
+  width: 15rem;
+  transition: 0.3s;
+}
+.gallery-list img:hover {
+  transform: scale(1.1);
+}
+
+.home-contact {
+  padding-bottom: 5rem;
+}
+.home-contact h2 {
+  padding: 5rem 0 1rem;
+}

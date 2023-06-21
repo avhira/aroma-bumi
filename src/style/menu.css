@@ -1,0 +1,48 @@
+.menu-wrapper {
+  width: 100vw;
+  padding: 7.5rem 0 6rem;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.menu h2 {
+  color: var(--primary);
+  font-size: 3rem;
+}
+.menu p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.menu-item {
+  text-align: center;
+  border-radius: 18px;
+  padding: 1rem 3rem;
+  margin: 0 2.5rem;
+  background-color: var(--primary);
+  background-image: url('../icon/Coffee background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+.menu-item:hover {
+  transform: scale(1.1);
+}
+.menu-item p {
+  color: var(--text);
+}
+.menu-item .title {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.menu-item img {
+  width: 12rem;
+}

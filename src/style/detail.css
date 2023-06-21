@@ -1,0 +1,62 @@
+.detail-wrapper {
+  width: 100vw;
+  padding: 6rem 0;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.detail-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.detail-content img {
+  width: 35rem;
+  height: auto;
+}
+.detail-data {
+  width: 50rem;
+}
+.detail-title h2,
+.detail-title h1,
+.detail-data h1 {
+  color: var(--primary);
+}
+.detail-title h2,
+.detail-data h1 {
+  font-size: 2.5rem;
+}
+.detail-title p,
+.detail-data p {
+  font-size: 1.2rem;
+}
+.detail-title p {
+  margin: 0.5rem 0 2rem;
+}
+.detail-title h1 {
+  font-size: 2.7rem;
+}
+.detail-data h1 {
+  border-bottom: 5px solid var(--secondary);
+  width: 20rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.detail-data p {
+  padding-bottom: 3.5rem;
+}
+.detail-data a {
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  background-color: var(--btn);
+  color: var(--text);
+  border-radius: 5rem;
+  display: flex;
+  gap: 5px;
+}
+.detail button a:hover {
+  background-color: rgb(255, 89, 89);
+}
