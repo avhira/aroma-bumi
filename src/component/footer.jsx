@@ -10,7 +10,7 @@ export default function Footer() {
       <footer>
         <div className="footer-wrapper">
           <div className="footer-logo">
-            <a href="/#">
+            <a href="#">
               <img src={Logo} alt="logo" />
             </a>
             <div className="footer-svg">

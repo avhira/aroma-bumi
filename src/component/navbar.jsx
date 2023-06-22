@@ -6,7 +6,7 @@ import '../style/navbar.css';
 
 export default function Navbar() {
   const location = useLocation();
-  const [isActive, setIsActive] = useState(location.pathname === '/aroma-bumi/');
+  const [isActive, setIsActive] = useState(location.pathname === '/aroma-bumi');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,19 +14,19 @@ export default function Navbar() {
       setIsActive(scrollPosition === 0);
     };
 
-    if (location.pathname === '/aroma-bumi/') {
+    if (location.pathname === '/aroma-bumi') {
       window.addEventListener('scroll', handleScroll);
     }
 
     return () => {
-      if (location.pathname === '/aroma-bumi/') {
+      if (location.pathname === '/aroma-bumi') {
         window.removeEventListener('scroll', handleScroll);
       }
     };
   }, [location]);
 
   useEffect(() => {
-    setIsActive(location.pathname === '/aroma-bumi/');
+    setIsActive(location.pathname === '/aroma-bumi');
   }, [location]);
 
   const navbarClass = classNames('home', { active: isActive });
