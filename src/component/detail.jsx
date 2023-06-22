@@ -81,7 +81,7 @@ export default function Detail() {
       </div>
     </div>
   ) : (
-    <p>Item not found</p>
+    <h1>Item not found</h1>
   );
 
   return (

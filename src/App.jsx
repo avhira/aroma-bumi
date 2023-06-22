@@ -14,7 +14,7 @@ export default function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/aroma-bumi" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="/findus" element={<Findus />} />

@@ -6,7 +6,7 @@ import '../style/navbar.css';
 
 export default function Navbar() {
   const location = useLocation();
-  const [isActive, setIsActive] = useState(location.pathname === '/');
+  const [isActive, setIsActive] = useState(location.pathname === '/aroma-bumi/');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,19 +14,19 @@ export default function Navbar() {
       setIsActive(scrollPosition === 0);
     };
 
-    if (location.pathname === '/') {
+    if (location.pathname === '/aroma-bumi/') {
       window.addEventListener('scroll', handleScroll);
     }
 
     return () => {
-      if (location.pathname === '/') {
+      if (location.pathname === '/aroma-bumi/') {
         window.removeEventListener('scroll', handleScroll);
       }
     };
   }, [location]);
 
   useEffect(() => {
-    setIsActive(location.pathname === '/');
+    setIsActive(location.pathname === '/aroma-bumi/');
   }, [location]);
 
   const navbarClass = classNames('home', { active: isActive });
@@ -34,7 +34,7 @@ export default function Navbar() {
   return (
     <div className="nav-wrapper">
       <nav className={navbarClass}>
-        <Link to="/">
+        <Link to="/aroma-bumi">
           <img src={Logo} alt="logo" />
         </Link>
         <ul>
