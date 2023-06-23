@@ -1,6 +1,6 @@
 footer {
   background-color: var(--bg);
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 1rem;
   display: grid;
   place-items: center;
   width: 100vw;
@@ -50,4 +50,9 @@ footer {
 }
 .footer-content ul li a span {
   color: var(--secondary);
+}
+.creator {
+  padding: 4rem 0 1rem;
+  color: var(--text);
+  font-size: 1.1rem;
 }

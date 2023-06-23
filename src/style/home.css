@@ -37,6 +37,7 @@ main {
 }
 .main-content {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 5rem;
   width: 55rem;
@@ -107,7 +108,7 @@ main {
 }
 
 .gallery h2 {
-  margin: 2rem 0;
+  margin: 2rem 0 3rem;
 }
 .gallery h2 span {
   color: var(--secondary);
@@ -115,6 +116,7 @@ main {
 }
 .gallery-list {
   display: grid;
+  place-items: center;
   grid-template-columns: repeat(3, 15rem);
   gap: 2.5rem 5rem;
 }
@@ -127,7 +129,8 @@ main {
 }
 
 .home-contact {
-  padding-bottom: 5rem;
+  padding: 0 1.5rem 5rem;
+  text-align: center;
 }
 .home-contact h2 {
   padding: 5rem 0 1rem;

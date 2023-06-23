@@ -61,6 +61,9 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+        <div className="creator">
+          <p>2023 &copy; Created By Avhira</p>
+        </div>
       </footer>
     </>
   );
