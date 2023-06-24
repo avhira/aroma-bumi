@@ -5,7 +5,7 @@ import Detail from './component/detail';
 import Findus from './component/findus';
 import Contact from './component/contact';
 import Footer from './component/footer';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 export default function App() {
   return (

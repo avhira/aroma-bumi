@@ -89,7 +89,30 @@
 
 @media (max-width: 670px) {
   nav ul {
-    display: none;
+    position: fixed;
+    background-color: rgba(20, 54, 66, 1);
+    inset: 0;
+    height: 45%;
+    width: 100%;
+    padding: 6rem 0 1rem;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all ease 0.6s;
+  }
+  nav ul.slide {
+    box-shadow: 0 8px 8px rgba(15, 139, 141, 0.5);
+    opacity: 1;
+    transform: translateY(0);
+  }
+  nav img {
+    width: 13rem;
+  }
+  nav .menu-toggle {
+    display: block;
   }
 
   .header h1 {
@@ -146,10 +169,10 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .menu h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .menu p {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .detail-content {
